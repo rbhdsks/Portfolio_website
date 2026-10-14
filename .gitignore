@@ -1,23 +1,18 @@
-# Ignore the contents of the _site directory and other cache directories
+# Python and local editor files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+.vscode/
+.idea/
+
+# Archived Jekyll / Node build artifacts
 _site/
 .sass-cache/
-
-# Ignore the directory for local files during development
-local/
-
-# Ignore the Gemfile that is generated
-Gemfile.lock
-
-# Ignore files created by npm
-node_modules
-package-lock.json
-
-# Ignore the vendor file at root level and bundle for alternative installation
+node_modules/
 /vendor/
 .bundle/
-
-# Ignore folders related to IDEs
-.vscode/
-
-# Ignore files created by MacOS
-.DS_Store
+Gemfile.lock
+package-lock.json
+local/
